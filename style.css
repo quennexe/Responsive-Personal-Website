@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4c2c2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin: 10px;
+}
+
+.project img {
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Responsive Tasarım */
+
+@media (max-width: 768px) {
+    body {
+        background-color: #f8f8f8;
+    }
+    main {
+        width: 90%;
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+body.dark header,
+body.dark footer {
+    background-color: #111;
+}
+
+body.dark .project img {
+    border: 5px solid white;
+}
+
+body.dark nav ul li a {
+    color: white;
+}
+
+body.dark button {
+    border: 2px solid black;
+    color: black;
+}
